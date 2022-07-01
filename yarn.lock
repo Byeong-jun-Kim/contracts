@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@klaytn/contracts@^1.0.2":
+"@klaytn/contracts@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@klaytn/contracts/-/contracts-1.0.2.tgz#c8210445e30468d5ccaad1d1fc2a805281478cfa"
   integrity sha512-4AxgM97HCdrRmiQ7gZVgvFZAoCglIEXLwITqqjierZbKqshkXOOJbw+jrD9tKjKQRkatTpcHlIE8Rk2ykQWQQA==
@@ -42,7 +42,7 @@ semver@^5.5.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
-solc@^0.8.15:
+solc@0.8.15:
   version "0.8.15"
   resolved "https://registry.yarnpkg.com/solc/-/solc-0.8.15.tgz#d274dca4d5a8b7d3c9295d4cbdc9291ee1c52152"
   integrity sha512-Riv0GNHNk/SddN/JyEuFKwbcWcEeho15iyupTSHw5Np6WuXA5D8kEHbyzDHi6sqmvLzu2l+8b1YmL8Ytple+8w==

@@ -1,6 +1,6 @@
 # contracts
 
-### This contract is based on KIP17(Kakao Klaytn), which written to support contract-level metadata of Opensea.
+### This contract is written to support contract-level metadata of Opensea based on KIP17(Kakao Klaytn)
 
 - Klaytn KIP17: https://github.com/klaytn/klaytn-contracts/tree/master/contracts/KIP/token/KIP17
 - Opensea contract-level metadata: https://docs.opensea.io/docs/contract-level-metadata
