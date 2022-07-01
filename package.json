@@ -1,0 +1,12 @@
+{
+  "name": "v4-blockchain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@klaytn/contracts": "^1.0.2",
+    "solc": "^0.8.15"
+  },
+  "scripts": {
+    "compile": "solcjs --abi --bin --output-dir dist"
+  }
+}
