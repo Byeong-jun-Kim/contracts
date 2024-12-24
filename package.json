@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "@klaytn/contracts": "1.0.2",
-    "solc": "0.8.15"
+    "@openzeppelin/contracts": "^5.1.0",
+    "solc": "^0.8.28"
   },
   "scripts": {
     "compile": "solcjs --abi --bin --output-dir dist"
