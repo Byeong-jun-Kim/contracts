@@ -1,3 +1,6 @@
 .vscode
-dist
+dist/*
 node_modules
+
+!dist/nft_full_sol_NFTFull.abi
+!dist/nft_full_sol_NFTFull.bin
