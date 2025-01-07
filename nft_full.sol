@@ -17,12 +17,14 @@ contract NFTFull is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Pausable, 
         setContractURI(contractURI_);
     }
 
+    event ContractURIUpdated();
     string private _contractURI;
     function contractURI() public view returns (string memory) {
         return _contractURI;
     }
     function setContractURI(string memory contractURI_) public onlyOwner {
         _contractURI = contractURI_;
+        emit ContractURIUpdated();
     }
 
     function pause() public onlyOwner {
