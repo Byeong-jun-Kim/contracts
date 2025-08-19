@@ -4,3 +4,6 @@ node_modules
 
 !dist/nft_full_sol_NFTFull.abi
 !dist/nft_full_sol_NFTFull.bin
+
+!dist/nft_auto_increment_sol_NFTAutoIncrement.abi
+!dist/nft_auto_increment_sol_NFTAutoIncrement.bin

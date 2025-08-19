@@ -9,7 +9,9 @@ import {ERC721Pausable} from "./node_modules/@openzeppelin/contracts/token/ERC72
 import {ERC721URIStorage} from "./node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import {Ownable} from "./node_modules/@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFTFull is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Pausable, Ownable, ERC721Burnable {
+contract NFTAutoIncrement is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Pausable, Ownable, ERC721Burnable {
+    uint256 private _nextTokenId;
+
     constructor(string memory name_, string memory symbol_, string memory contractURI_, address initialOwner)
         ERC721(name_, symbol_)
         Ownable(initialOwner)
@@ -35,12 +37,15 @@ contract NFTFull is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Pausable, 
         _unpause();
     }
 
-    function safeMint(address to, uint256 tokenId, string memory uri)
+    function safeMint(address to, string memory uri)
         public
         onlyOwner
+        returns (uint256)
     {
+        uint256 tokenId = _nextTokenId++;
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
+        return tokenId;
     }
 
     // The following functions are overrides required by Solidity.
